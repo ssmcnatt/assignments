@@ -2,9 +2,6 @@ SELECT COUNT(*) FROM people;
 SELECT COUNT(*) FROM salaries;
 SELECT COUNT(*) FROM hof_inducted;
 SELECT COUNT(*) FROM hof_not_inducted;
-select * from people
-select * from salaries
-where playerid = 'vaughmo01';
 
 -- Write a query that returns the namefirst and namelast fields of the people table, along with the inducted field from the hof_inducted table. All rows from the people table should be returned, and NULL values for the fields from hof_inducted should be returned when there is no match found.
 SELECT p.namefirst, p.namelast, hof.inducted
@@ -102,7 +99,6 @@ ORDER BY yearid, inducted DESC, namefull;
 SELECT s.teamid
 	   , s.yearid
 	   , MAX(s.salary) AS high_salary
--- I don't know how to output playerid without getting the wrong output
 FROM salaries AS s
 GROUP BY s.teamid, s.yearid
 ORDER BY s.teamid, high_salary DESC;
