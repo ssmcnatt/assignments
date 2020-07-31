@@ -1,3 +1,6 @@
+-- Here is a link to my draw.io file
+-- https://app.diagrams.net/#G1dnwf8uv5E1HMmxurM-WHydOW1vmLZHGT
+
 SELECT COUNT(*) FROM people;
 SELECT COUNT(*) FROM salaries;
 SELECT COUNT(*) FROM hof_inducted;
